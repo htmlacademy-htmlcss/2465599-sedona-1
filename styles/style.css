@@ -13,16 +13,42 @@
   src: url("fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
+
+html{
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   background-color: #ffffff;
-  margin: 0;
 }
 
+
 /*Pages*/
+navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav-logo{
+  width: 138px;
+  margin-right: 100px;
+}
+.navigation-list{
+  width: 339px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user{
+  width: 268px;
+  margin-left: auto;
+}
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -37,6 +63,17 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+}
+.main-container{
+  flex-grow: 1;
+}
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.hero{
+  display: block;
+  margin: 0 auto;
 }
 /*heading*/
 .heading-m {
@@ -60,12 +97,20 @@ body {
 .advantages-description {
   text-align: center;
   font-weight: 700;
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-description {
   text-align: center;
   font-weight: 400;
   color: #333333;
+}
+.advantages-item{
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-item--picture {
@@ -74,12 +119,21 @@ body {
 }
 
 .advantages-title {
+  display: flex;
+  width: 400px;;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
 }
 
 /*services*/
+.service-list{
+  display: flex;
+  justify-content: space-between;
+}
+.service-item{
+  width: 400px;
+}
 .service-title {
   font-weight: 700;
   text-align: center;
