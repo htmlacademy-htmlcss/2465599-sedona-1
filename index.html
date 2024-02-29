@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -10,13 +10,13 @@
   <body>
     <div class="container">
       <header class="page-header">
+        <a class="nav-logo">
+          <img class="logo-img" src="images/images/logo_sedona.svg" width="140" height="70" alt="логотип">
+        </a>
         <nav class="navigation">
-          <a class="nav-logo">
-            <img class="logo-img" src="images/images/logo_sedona.svg" width="140" height="70" alt="логотип">
-          </a>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item--active">
-              <a class="navigation-link" href="#">Главная"></a>
+              <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -25,20 +25,18 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+          <ul class="navigation-user">
+            <li class="item-user">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span>
-                <img src="images/img_icon/search_icon.svg" width="44" height="64" alt="Поиск">
+                <img src="images/img_icon/search_icon.svg" width="44" height="64">
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="item-user">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <img src="images/img_icon/favorites_icon.svg" width="44" height="64" alt="Избранное">
+                <img src="images/img_icon/favorites_icon.svg" width="44" height="64">
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="item-user-registration">
               <a class="navigation-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -46,11 +44,10 @@
       </header>
       <main class="main-container main-inner">
         <section class="hero">
-          <h2 class="visually-hidden">Седона</h2>
-          <img src="images/images/sedona-mountains.jpg" width="1200" height="485" alt="Горы">
+          <img src="images/images/sedona-mountains.jpg" width="1200" height="485" alt="Седона">
+          <img srs="images/images/welcome.svg" width="458" height="352" alt="welcome">
         </section>
         <section class="advantages">
-          <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-description heading-m">
             Седона-небольшой городок в Аризоне,заслуживающий большего!
           </p>

@@ -39,29 +39,58 @@ body {
 
 
 /*Pages*/
-.navigation {
-  display: flex;
-  margin: 0 auto;
+
+.page-header {
+display: flex;
+width: 1200px;
+padding: o 70px;
+justify-content: space-between;
 }
 
 .nav-logo {
-  width: 138px;
-  margin-right: 100px;
+  display: block;
+  box-sizing: border-box;
+  width: 140px;
+  height: 70px;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  max-width: 890px;
+  justify-content: space-between;
 }
 
 .navigation-list {
   display: flex;
-  width: 339px;
+  flex-wrap: wrap;
+  width: 500px;
   margin: 0;
   padding: 0;
+  align-items: center;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.navigation-item {
+  margin-right: 32px;
+  display: list-item;
+  list-style: none;
+box-sizing: border-box;
 }
 
 .navigation-user {
   display: flex;
-  width: 268px;
-  margin-left: auto;
+  align-items: center;
+  width: 310px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
+.item-user{
+  margin-right: 10px;
+  display: list-item;
+}
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -69,13 +98,19 @@ body {
   text-align: left;
 }
 
-.navigation-item {
+.item-user-registration {
+  padding: 8px 50px;
+  display: inline;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+  width: 192px;
+  height: 36px;
+  border: none;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -84,8 +119,12 @@ body {
 
 
 .hero {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 485px;
 }
 /*heading*/
 .heading-m {
@@ -112,13 +151,13 @@ body {
 /*advantages*/
 
 .advantages-description {
-  text-align: center;
-  font-weight: 700;
   display: flex;
-  width: 1200px;
-  height: 261px;
-  padding: 0 69px;
+  font-weight: 700;
+  max-width: 619.69px;
+  justify-content: center;
+  margin-bottom: 25px;
   margin: 0;
+  padding: 69px 0;
 }
 
 .advantages-description {
@@ -126,6 +165,9 @@ body {
   text-align: center;
   font-weight: 400;
   color: #333333;
+  max-width: 650px;
+  height: 26px;
+  margin: 0;
 }
 
 .advantages-list{
