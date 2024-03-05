@@ -76,7 +76,6 @@ justify-content: space-between;
   margin-right: 32px;
   display: list-item;
   list-style: none;
-box-sizing: border-box;
 }
 
 .navigation-user {
@@ -95,22 +94,29 @@ box-sizing: border-box;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  text-decoration: none;
   text-align: left;
+  color: #000000;
 }
 
 .item-user-registration {
-  padding: 8px 50px;
-  display: inline;
+  text-align: center;
+  background-color: #756157;
+  width: 191.2px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.navigation-link-registration{
+  display: inline-block;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+  min-height: 36px;
+  text-decoration: none;
   color: #ffffff;
-  background-color: #756157;
-  width: 192px;
-  height: 36px;
-  border: none;
-  box-sizing: border-box;
 }
 
 .main-container {
@@ -125,9 +131,14 @@ box-sizing: border-box;
   align-items: center;
   width: 1200px;
   height: 485px;
+  background-image: url("..images/images/sedona-mountains.jpg");
+  background-size: cover;
+  background-color: #333333;
 }
+
 /*heading*/
 .heading-m {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -146,70 +157,110 @@ box-sizing: border-box;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 230px;
+  height: 42px;;
 }
 
 /*advantages*/
 
-.advantages-description {
+.welcome{
   display: flex;
-  font-weight: 700;
-  max-width: 619.69px;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 25px;
-  margin: 0;
-  padding: 69px 0;
+  align-items: center;
+  padding: 69px 0;;
+  height: 261px;
+  box-sizing: inherit;
 }
 
 .advantages-description {
+  display: flex;
+  min-height: 72px;
+  margin:25px;
+}
+
+.description-advantages {
   display: flex;
   text-align: center;
   font-weight: 400;
   color: #333333;
-  max-width: 650px;
   height: 26px;
-  margin: 0;
+  margin: 0 ;
 }
 
 .advantages-list{
-  display: flex;
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 400px;
-  height: 385px;
-  justify-content: space-between;
+  height: 366px;
   padding: 103px 85px;
 }
 
 .advantages-item--picture {
+  display: flex;
+  width: 1200px;
+  height: 385;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 103px 85px;
+  grid-column: span 2;
+  flex-wrap: wrap;
   color: #ffffff;
   background-color: #82b3d3;
 }
 
 .advantages-title {
   display: flex;
-  width: 400px;
+  text-transform: uppercase;
+  max-width: 175px;
+  height:88px;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /*services*/
-
-.service{
+.welcome2-container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  height: 246px;
 }
 
-.service-list {
-  display: flex;
-  justify-content: space-between;
+.service{
+  height: 631px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 385px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 85px;
   width: 400px;
-  padding: 0 80px;
 }
 
 .service-title {
@@ -225,22 +276,29 @@ box-sizing: border-box;
   line-height: 21px;
   text-align: center;
   color: #333333;
-  width: 1200px;
-  padding: 0 64px;
 }
 
 .service-item--primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 85px;
   background-color: #83b3d31f;
 }
 
 /*search*/
 .search {
   display: flex;
-  width: 1200px;
-  padding: 0 96px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 304px;
 }
 
 .search-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -248,6 +306,7 @@ box-sizing: border-box;
 }
 
 .search-description {
+  margin-bottom: 54px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -255,8 +314,11 @@ box-sizing: border-box;
   color: #333333;
 }
 
-.btn btn--search {
-  font-size: 20px;
+.registration {
+  display: inline-block;
+  font-family: inherit;
+  width: 375.19px;
+  min-height: 52px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
@@ -268,29 +330,51 @@ box-sizing: border-box;
 
 .newsletter {
   display: flex;
-  width: 1200px;
-  height: 414.86px;
-  padding: 96px, 258px;
-}
-
-.newsletter-form{
-  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 70px;
+  background-image: url(..images/images/footer.jpg);
+  background-size: 100% auto ;
+  background-color: blue ;
+  background-repeat: no-repeat;
 }
 
 .newsletter-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
   color: #ffffff;
 }
 
+
 .newsletter-description {
+  max-width: 467px;
+  height: 54px;
+  margin-bottom: 54px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+}
+
+.newsletter-form{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  height: 52px;
+  width: 684px;
+}
+
+.newsletter-adress{
+  display: inline-block;
+  width: 452px;
+  min-height: 52px;
+  border: none;
+
 }
 
 .newsletter-email {
@@ -301,35 +385,67 @@ box-sizing: border-box;
   color: #000000;
   background: #f2f2f2;
 }
+.field{
+  width: 452px;
+  min-height: 52px;
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  border: none;
+}
 
-.btn newsletter-btn {
+.button-newsletter {
+  padding: 8px 50px;
+  min-height: 52px;
+  border-radius: 0%;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  background-color: #82b3d3;
 }
 /*footer*/
 
-.footer-contacts-container {
+.footer-contacts {
   display: flex;
-  width: 1060px;
+  width: 1200;
+  min-height: 120px;
+  padding: 40px 70px 30px 70px;
   justify-content: space-between;
-  margin: 0 auto;
+  align-items: center;
 }
 
 .footer-social-list{
+  width: 170px;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type:none ;
 }
 
 .footer-social-item {
-  display: flex;
-  width: 47.33px;
-  padding: 0 10px;
+  margin-right: 8px;
+}
+
+.footer-social-link{
+  display: block;
+  width: 47px;
+  height: 40px;
+  padding: 10px;
 }
 
 .footer-contacts-adress-phone {
-  width: 331px;
+  padding: 5px 10px;
+  margin: 0;
+  max-width: 700px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .about-creators {

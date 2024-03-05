@@ -37,23 +37,24 @@
               </a>
             </li>
             <li class="item-user-registration">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+              <a class="navigation-link-registration" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-container main-inner">
         <section class="hero">
-          <img src="images/images/sedona-mountains.jpg" width="1200" height="485" alt="Седона">
-          <img srs="images/images/welcome.svg" width="458" height="352" alt="welcome">
+          <img src ="images/images/welcome.svg" width="458" height="352" alt="welcome">
         </section>
         <section class="advantages">
+         <div class="welcome">
           <p class="advantages-description heading-m">
             Седона-небольшой городок в Аризоне,заслуживающий большего!
           </p>
-          <p class="advantages-description heading-s">
+          <p class="description-advantages heading-s">
             Рассмотрим причины,по которым Седона круче,чем Гранд-Каньон!
           </p>
+         </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item--picture">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -90,31 +91,32 @@
           </ul>
         </section>
         <section class="services">
-          <h2 class="visually-hidden">Сервис</h2>
+          <div class="welcome2-container">
           <p class="advantages-description heading-m">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </p>
-          <p class="advantages-description heading-s">
+          <p class="description-advantages heading-s">
             Опытный персонал и качественное обслуживание!
           </p>
+          </div>
           <ul class="services-list">
             <li class="service-item service-item--primary">
-              <h3 class="service-title">Жильё</h3>
               <img src="images/img_icon/housing-icon.svg" width="77" height="72" alt="Жильё">
+              <h3 class="service-title">Жильё</h3>
               <p class="service-description description text-m">
                 Рекомендуем пожить в настоящем мотеле,всё как в кино!
               </p>
             </li>
             <li class="service-item">
-              <h3 class="service-title">Еда</h3>
               <img src="images/img_icon/food-icon.svg" width="76" height="72" alt="Еда">
+              <h3 class="service-title">Еда</h3>
               <p class="service-description description text-m">
                 Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!
               </p>
             </li>
             <li class="service-item service-item--primary">
-              <h3 class="service-title">Сувениры</h3>
               <img src="images/img_icon/souvenirs-icon.svg" width="76" height="76" alt="Сувениры">
+              <h3 class="service-title">Сувениры</h3>
               <p class="service-description description text-m">
                 Не только китайского,но и местного производства!
               </p>
@@ -127,9 +129,7 @@
             Укажите предполагаемые даты поездки,и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <button type="button" class="btn btn--search">
-            Поиск гостиницы в Седоне
-          </button>
+          <a href="catalog.html" class="registration">Поиск гостиницы в Седоне!</a>
         </section>
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишись на рассылку</h2>
@@ -137,20 +137,15 @@
             Только полезная информация и никакого спама,честное бойскаутское!
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="newsletter">
-              <label for="newsletter-email">Email</label>
+            <div class="newsletter-adress">
               <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
                 required>
             </div>
-            <button class="btn newsletter-btn" type="submit">
-              <span class="visually-hidden">Подписаться</span>
-            </button>
+            <button type= "submit" class="button-newsletter">Подписаться</button>
           </form>
         </section>
       </main>
       <footer class="footer-contacts">
-        <div class="footer-contacts-container">
-          <h2 class="visually-hidden">Контакты</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="#"><span class="visually-hidden">Вконтакте</span></a>
@@ -166,10 +161,9 @@
             <img src="images/img_icon/social-youtube_icon.svg" width="48" height="41" alt="Youtube">
             </li>
           </ul>
-          <a class="footer-contacts-adress-phone" href="tel:+7(812)812-12-12"></a>
+          <a class="footer-contacts-adress-phone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
           <a class="about-creators" href="tphts://htmlacademy.ru/"><img src="images/images/logo_htmlacademy.svg"
               width="115" height="33" alt="Логотип HTML Academy"></a>
-        </div>
       </footer>
     </div>
   </body>

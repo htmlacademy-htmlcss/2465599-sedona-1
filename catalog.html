@@ -9,39 +9,39 @@
 
   <body>
     <div class="container">
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="nav-logo" href="index.html">
-          <img class="images/images/logo_sedona.svg" src="" width="140" height="70" alt="логотип" >
+      <header class="page-header">
+        <a class="nav-logo">
+          <img class="logo-img" src="images/images/logo_sedona.svg" width="140" height="70" alt="логотип">
         </a>
-        <ul class="=navigation list">
-          <li class="navigation-item navigation-item--active">
-            <a class="navigation link" href="#">Главная"></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-              <img src="images/img_icon/search_icon.svg" width="44" height="64" alt="Поиск" >
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <img src="images/img_icon/favorites_icon.svg" width="44" height="64" alt="Избранное" >
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-item--active">
+              <a class="navigation-link" href="#">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="item-user">
+              <a class="navigation-link" href="#">
+                <img src="images/img_icon/search_icon.svg" width="44" height="64">
+              </a>
+            </li>
+            <li class="item-user">
+              <a class="navigation-link" href="#">
+                <img src="images/img_icon/favorites_icon.svg" width="44" height="64">
+              </a>
+            </li>
+            <li class="item-user-registration">
+              <a class="navigation-link-registration" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       </nav>
     </header>
     <main>
@@ -280,39 +280,35 @@
         Только полезная информация и никакого спама,честное бойскаутское!
       </p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="newsletter">
-          <label for="newsletter-email">Email</label>
+        <div class="newsletter-adress">
           <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
-            required >
+            required>
         </div>
-        <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
-        </button>
+        <button type= "submit" class="button-newsletter">Подписаться</button>
       </form>
     </section>
-    <footer class="footer-contacts">
-      <div class="footer-contacts-container">
-      <h2 class="visually-hidden">Контакты</h2>
+  </main>
+  <footer class="footer-contacts">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="#"><span class="visually-hidden">Вконтакте</span></a>
-          <img src="images/img_icon/social-vk_icon.svg" width="48" height="41" alt="Вконтакте" >
+          <img src="images/img_icon/social-vk_icon.svg" width="48" height="41" alt="Вконтакте">
         </li>
         <li class="footer-social-item">
           <a class="footer-social-link" href="#"><span class="visually-hidden"></span></a>
-          <img src="images/img_icon/social-telegram_icon.svg" width="48" height="41" alt="Telegram" >
+          <img src="images/img_icon/social-telegram_icon.svg" width="48" height="41" alt="Telegram">
         </li>
         <li class="footer-social-item">
-          <a class="footer-social-link" href="#"><span class="visually-hidden">Youtube</span></a>
-          <img src="images/img_icon/social-youtube_icon.svg" width="48" height="41" alt="Youtube" >
+          <a class="footer-social-link" href="#">
+        </li><span class="visually-hidden">Youtube</span></a>
+        <img src="images/img_icon/social-youtube_icon.svg" width="48" height="41" alt="Youtube">
         </li>
       </ul>
-      <a class="footer-contacts-adress-phone" href="tel:+7(812)812-12-12"></a>
+      <a class="footer-contacts-adress-phone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
       <a class="about-creators" href="tphts://htmlacademy.ru/"><img src="images/images/logo_htmlacademy.svg"
-        width="115" height="33" alt="Логотип HTML Academy" ></a>
-      </div>
-    </footer>
-    </div>
-  </body>
+          width="115" height="33" alt="Логотип HTML Academy"></a>
+  </footer>
+</div>
+</body>
 
 </html>
