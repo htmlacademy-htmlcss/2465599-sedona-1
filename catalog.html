@@ -44,14 +44,19 @@
       </header>
       </nav>
     </header>
-    <main>
+    <main class="main-container" >
       <section class="catalog-hotels">
+        <div class="catalog-container">
         <h2 class="inner-header-title">Гостиницы Седоны</h2>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <li class="breadcrumbs-item breadcrumbs-item-home">
+            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+              <img src="images/img_icon/homes_icon.svg">
+              <img src="images/img_icon/Vector_icon.svg">
+              <span class="visually-hidden"> Главная</span>
+            </a>
           </li>
-          <li class="=breadcrumbs-item">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
@@ -84,35 +89,34 @@
                 <label class="control" for="motel">Мотель</label>
                 <input class="control-input" type="radio" id="motel" name="hotels-info" value="motel" >
               </li>
-              <li class="catalog-filter-iten">
+              <li class="catalog-filter-item">
                 <label class="control" for="apartment">Апартаменты</label>
                 <input class="control-input" type="radio" id="apartment" name="hotels-info" value="apartment" >
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость,₽</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">от</label>
-                <input class="control-input" type="text" name="price" value="0" >
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">до</label>
-                <input class="control-input" type="text" name="price" value="9000" >
-              </li>
-            </ul>
-          </fieldset>
           <div class="range-slider">
-            <button class="range-slider-btn">Кнопка 1</button>
-            <button class="range-slider-btn">Кнопка 2</button>
+            <fieldset class="filter-price-slider">
+              <legend class="filter-title"> Стоимость,₽:</legend>
+              <div class="price">
+                <label>
+                <input class="filter-price-inpute" type="number" name="min-price" min="0" max="9000" step="1000" placeholder="от" value="0">
+                <span>от</span>
+                </label>
+                <label>
+                  <input class="filter-price-inpute filter-price-inpute-max" type="number " name="max-price" min="0" max="30000" step="100" placeholder="до" value="9000">
+                  <span>до</span>
+                </label>
+              </div>
+            </fieldset>
             <div class="range-slider-active-line"></div>
           </div>
-          <div>
-            <button class="button btn--blue" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+          <div class="button-price">
+            <button class="button button-blue" type="submit">Применить</button>
+            <button class="button button-reset" type="reset">Сбросить</button>
           </div>
         </form>
+        </div>
       </section>
       <section class="catalog">
         <div class="control-catalog">
