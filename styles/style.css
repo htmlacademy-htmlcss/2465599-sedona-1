@@ -28,6 +28,8 @@ html {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px 0px #00000033;
 }
 
 body {
@@ -39,7 +41,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -60,7 +62,7 @@ body {
   flex-direction: row;
   width: 1200px;
   padding: 0 70px;
-  height: 70px;
+  height: 67px;
   justify-content: space-between;
   margin-bottom: -6px;
 }
@@ -72,9 +74,9 @@ body {
 }
 
 .navigation {
+  height: 64px;
   display: flex;
-  margin: 0 auto;
-  max-width: 890px;
+  width: 890px;
   justify-content: space-between;
 }
 
@@ -93,6 +95,15 @@ body {
   margin-right: 32px;
   display: list-item;
   list-style: none;
+}
+
+.navigation-link{
+  display: block;
+  padding: 16px 0 16px 0;
+}
+
+.navigation-link-active{
+  border-bottom: 2px solid #756157;
 }
 
 .navigation-user {
@@ -255,6 +266,9 @@ body {
   display: flex;
   text-transform: uppercase;
   height: 88px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
@@ -274,13 +288,15 @@ body {
 }
 
 .welcome-advantages {
+  width: 800px;
   height: 72px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .advantages-welcome {
@@ -403,7 +419,7 @@ body {
 
 
 .newsletter-description {
-  max-width: 467px;
+  width: 542px;
   height: 54px;
   margin-bottom: 54px;
   font-size: 22px;
@@ -435,6 +451,16 @@ body {
   text-align: left;
   color: #000000;
   background: #f2f2f2;
+}
+
+
+::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  opacity: 60%;
 }
 
 .field {
@@ -510,6 +536,17 @@ body {
 
 .about-creators {
   width: 114.9px;
+}
+
+/*modal*/
+
+.modal-container{
+  display: flex;
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2CC;
+
 }
 
 /*catalog-hotels*/
@@ -625,11 +662,20 @@ body {
 }
 
 .control-input {
-  top: 2px;
+  position: absolute;
+  top: -3px;
   left: 0;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
+  cursor: pointer;
+}
+
+.control{
+  position: relative;
+  display: block;
+  padding-left: 36px;
+cursor: pointer;
 }
 
 
@@ -651,8 +697,8 @@ body {
 
 .span {
   position: absolute;
-  top: 10%;
-  right: 20%;
+  top: 1px;
+  right: 50px;
   color: #aaaaaa;
 }
 
@@ -677,11 +723,14 @@ body {
 
 .input-price {
   position: relative;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .range_line-progress {
   height: 4px;
   background-color: #ffffff;
+  width: 196px;
 }
 
 .range_line {
@@ -707,7 +756,7 @@ body {
 
 .range_button-less {
   top: -8px;
-  right: -10px;
+  right: 79px;
 }
 
 .button-price {
@@ -785,6 +834,12 @@ body {
   text-align: left;
   color: #333333;
   margin-right: 70px;
+  background-color: #ffffff;
+  background-image: url(../images/img_icon/select.svg) ;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
 }
 
 .cards {
@@ -792,10 +847,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
   margin: 0;
   padding: 0;
   max-width: 300px;
+}
+
+.filter-control{
+  margin-right: 8px;
 }
 
 .hotels {
@@ -821,10 +879,12 @@ body {
 }
 
 .hotel-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   text-align: left;
   grid-column: 2 span;
-  margin-top: 0;
+
 }
 
 .hotel-block {
@@ -878,11 +938,19 @@ body {
   background-color: #82b3d3;
 }
 
-.btn btn--green {
+.button-favorit{
+  padding: 2px;
+  font-family: inherit;
+  width: 140px;
+  height: 36px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #ffffff;
   background-color: #7db54f;
 }
 
@@ -895,8 +963,11 @@ body {
 }
 
 .hotel-rate-text {
+  top: 9px;
+  left: 183px;
   width: 140px;
-  height: 20px;
+  height: 37px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -933,9 +1004,11 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .pagination-link-first{
+  color: #000000;
   background-color: #F2F2F2;
 
 }
