@@ -179,13 +179,60 @@
               width="115" height="33" alt="Логотип HTML Academy"></a>
       </footer>
     </div>
-  </*div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post"></form>
+        <ul class="modal-registration-list">
+          <li class="modal-registration-item">
+            <label class="modal-label" for="coming">Дата заезда:</label>
+            <input class="modal-registration-input" id="coming" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+            <p class="clarification clarification-error">Мы не можем отправить вас в прошлое.</p>
+          </li>
+          <li class="modal-registration-item">
+            <label class="modal-label" for="departure">Дата выезда:</label>
+            <input class="modal-registration-input" id="departure" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
+            <p class="clarification">На эти даты есть свободные номера.Пока есть.</p>
+          </li>
+        </ul>
+        <ul class="modal-registration-people">
+          <li class="amount-registration-item">
+            <label class="modal-label" for="adults">Взрослые:</label>
+            <div class="modal-amount-wrapper">
+              <button class="modal-amount-button button-minus" type="button"></button>
+              <span class="visually-hidden">убрать взрослого</span>
+              <input class="modal-amount-input" type="number" value="2" min="0" max="50" required id="adults">
+              <button class="modal-amount-button button-plus" type="button"></button>
+              <span class="visually-hidden">добавить взрослого</span>
+            </div>
+          </li>
+          <li class="amount-registration-item">
+            <label class="modal-label" for="children">Дети:
+              <span class="tooltip">
+                <b class="tooltip-icon"> </b>
+                <img  src=" images/img_icon/triangle.svg" width="19" height="9">
+                <span class="tooltip-text">
+                  "Укажите количество детей,которые будут с вами,возраст которых от 6 до 18 лет.Дети до 6 лет размещаются бесплатно."
+                </span>
+              </span>
+            </label>
+            <div class="modal-amount-wrapper">
+              <button class="modal-amount-button button-minus" type="button"></button>
+              <span class="visually-hidden">убрать ребенка</span>
+              <input class="modal-amount-input" type="number" value="2" min="0" max="50" required id="children">
+              <button class="modal-amount-button button-plus" type="button"></button>
+              <span class="visually-hidden">добавить ребенка</span>
+            </div>
+          </li>
+        </ul>
+        <a class="button button-modal button-modal-find" href="#">
+          Найти
+          <span class="visually-hidden">искать свободный номер</span>
+        </a>
       </section>
     </div>
 
