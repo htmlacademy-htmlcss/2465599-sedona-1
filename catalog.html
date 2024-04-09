@@ -42,8 +42,6 @@
           </ul>
         </nav>
       </header>
-      </nav>
-    </header>
     <main class="main-container" >
       <section class="catalog-hotels">
         <div class="catalog-container">
@@ -65,33 +63,52 @@
             <legend class="catalog-filter-title">Инфрастуктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" id="swimming-pool" name="Бассейн" >
-                <label class="control" for="swimming-pool">Бассейн</label>
+                <label class="control" for="swimming-pool">
+                <input class="visually-hidden control-input" type="checkbox" id="swimming-pool" name="Бассейн" >
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
+              </label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" id="parking" name="Парковка" >
-                <label class="control" for="parking">Парковка</label>
+                <label class="control" for="parking">
+                <input class="visually-hidden control-input" type="checkbox" id="parking" name="Парковка" >
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
+                </label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" id="internet" name="Wi-Fi" >
-                <label class="control" for="internet">Wi-Fi</label>
+                <label class="control" for="internet">
+                <input class="visually-hidden control-input" type="checkbox" id="internet" name="Wi-Fi" >
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
+                </label>
+                <label class="control" for="internet">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-group-type">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input class="control-input" type="radio" id="hotels" name="hotels-info" value="hotels" >
-                <label class="control" for="hotels">Гостиница</label>
+                <label class="control" for="hotels">
+                <input class=" visually-hidden control-input" type="radio" id="hotels" name="hotels-info" value="hotels" >
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
+                </label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="radio" id="motel" name="hotels-info" value="motel" >
-                <label class="control" for="motel">Мотель</label>
+                <label class="control" for="motel">
+                <input class="visually-hidden control-input" type="radio" id="motel" name="hotels-info" value="motel" >
+                <span class="control-mark"></span>
+                <span class="control-label"> Мотель</span>
+              </label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="radio" id="apartment" name="hotels-info" value="apartment" >
-                <label class="control" for="apartment">Апартаменты</label>
+                <label class="control" for="apartment">
+                <input class="visually-hidden control-input" type="radio" id="apartment" name="hotels-info" value="apartment" >
+                <span class="control-mark"></span>
+                <span class="control-label"> Апартаменты </span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -257,13 +274,13 @@
       </section>
     </main>
     <section class="newsletter-catalog">
-      <h2 class="newsletter-title-catalog">Подпишись на рассылку</h2>
+      <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
       <p class="newsletter-description-catalog">
         Только полезная информация и никакого спама,честное бойскаутское!
       </p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="newsletter-adress">
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
         </div>
         <button type= "submit" class="button-newsletter">Подписаться</button>
